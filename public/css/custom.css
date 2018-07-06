@@ -1,0 +1,35 @@
+body {
+  background-color: #eaeaea;
+  font-family: sans-serif;
+}
+
+.main {
+  width: 1280px;
+  margin: 2em auto;
+  background-color: #fff;
+  min-height: 500px;
+
+}
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-bottom: 1px solid #ddd;
+  margin: 2em 0 0;
+}
+
+.magic {
+  /*height: 500px;*/
+}
+
+.inner {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.5em;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  background-image: url('/img/fon.jpg');
+  background-size: cover;
+}

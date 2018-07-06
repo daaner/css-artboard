@@ -1,0 +1,33 @@
+$content_width: 1280px !default;
+$content_height: 500px !default;
+
+$b_width: ($content_width /3);
+$b_height: ($content_height /2);
+
+@import 'scss/magic/mixin-flex';
+@import 'scss/magic/count'; // last blocks
+@import 'scss/magic/count-all'; // all blocks
+
+.magic {
+  width: $content_width;
+  flex-basis: $content_width;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  position: relative;
+  overflow-x: auto;
+
+  & > div {
+    display: flex;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-shrink: 0;
+  }
+}

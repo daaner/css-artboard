@@ -4,5 +4,4 @@
 
 
 // DEV
-// проверка и версия скриптов
-require ('./js/test.js');
+// require ('./js/test.js');

@@ -12,7 +12,7 @@
   <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <?php //title
     if (!isset($title)) {
@@ -58,8 +58,7 @@
     <meta property="og:site_name" content="<?php echo $site_name ?>">
     <meta property="og:url" content="<?php echo $base ?>">
     <meta property="og:locale" content="en-GB">
-
-    <link href="<?php echo $base ?>css/style.css" rel="stylesheet">
+    
 
   </head>
   <body>

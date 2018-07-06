@@ -1,0 +1,54 @@
+// X00
+// X00
+// left vertical block
+@mixin left_block {
+  width: $b_width;
+  height: ($b_height *2);
+}
+
+// 0XX
+// 000
+// top horizontal block
+@mixin top_block {
+  width: ($b_width *2);
+  height: $b_height;
+}
+
+// 000
+// 0X0
+// left bottom square block
+@mixin sql_block {
+  width: $b_width;
+  height: $b_height;
+  margin-left: -($b_width *2);
+  margin-top: $b_height;
+}
+
+
+// 000
+// 00x
+// right bottom square block
+@mixin sqr_block {
+  width: $b_width;
+  height: $b_height;
+  margin-top: $b_height;
+}
+
+
+// x  or 0x
+// 0     00
+// left top square block
+@mixin sqt_block {
+  width: $b_width;
+  height: $b_height;
+}
+
+// 0  or 00
+// x     0x
+// left top square block
+@mixin sqb_block {
+  width: $b_width;
+  height: $b_height;
+  margin-left: -$b_width;
+  margin-top: $b_height;
+}

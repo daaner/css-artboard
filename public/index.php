@@ -1,248 +1,72 @@
 <?php
-  $title = 'Style grid';
+  $title = 'Style Flex grid';
   // $description = 'description page';
   // $canonical = 'FULL URL';
 
   include './template/header.php';
   // ---------------------------
 ?>
+<link href="<?php echo $base ?>css/custom.css" rel="stylesheet">
+
+<link href="<?php echo $base ?>css/style.css" rel="stylesheet">
 
 
 <section class="main">
   <h1 class="header">test</h1>
 
-  <div class="magic 1">
-    1
-    <div></div>
+  <p class="header">4</p>
+  <div class="magic">
+    <div><div class="inner">1</div></div>
+    <div><div class="inner">2</div></div>
+    <div><div class="inner">3</div></div>
+    <div><div class="inner">4</div></div>
   </div>
-  <hr>
 
-  <div class="magic 2">
-    2
-    <div></div>
-    <div></div>
+  <p class="header">5</p>
+  <div class="magic">
+    <div><div class="inner">1</div></div>
+    <div><div class="inner">2</div></div>
+    <div><div class="inner">3</div></div>
+    <div><div class="inner">4</div></div>
+
+    <div><div class="inner">5</div></div>
   </div>
-  <hr>
 
-  <div class="magic 3">
-    3
-    <div></div>
-    <div></div>
-    <div></div>
+  <p class="header">6</p>
+  <div class="magic">
+    <div><div class="inner">1</div></div>
+    <div><div class="inner">2</div></div>
+    <div><div class="inner">3</div></div>
+    <div><div class="inner">4</div></div>
+
+    <div><div class="inner">5</div></div>
+    <div><div class="inner">6</div></div>
   </div>
-  <hr>
 
-  <div class="magic 4">
-    4
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+  <p class="header">7</p>
+  <div class="magic">
+    <div><div class="inner">1</div></div>
+    <div><div class="inner">2</div></div>
+    <div><div class="inner">3</div></div>
+    <div><div class="inner">4</div></div>
+
+    <div><div class="inner">5</div></div>
+    <div><div class="inner">6</div></div>
+    <div><div class="inner">7</div></div>
   </div>
-  <hr>
 
+  <p class="header">8</p>
+  <div class="magic">
+    <div><div class="inner">1</div></div>
+    <div><div class="inner">2</div></div>
+    <div><div class="inner">3</div></div>
+    <div><div class="inner">4</div></div>
 
-  <div class="magic 5">
-    5
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
+    <div><div class="inner">5</div></div>
+    <div><div class="inner">6</div></div>
+    <div><div class="inner">7</div></div>
+    <div><div class="inner">8</div></div>
   </div>
-  <hr>
-  <div class="magic 6">
-    6
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-  </div>
-  <hr>
-  <div class="magic 7">
-    7
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-  <hr>
-  <div class="magic 8">
-    8
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-  <hr>
-  <div class="magic 9">
-    9
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-  </div>
-  <hr>
-  <div class="magic 10">
-    10
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-  </div>
-  <hr>
-  <div class="magic 11">
-    11
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-  <hr>
-  <div class="magic 12">
-    12
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-  <hr>
-  <div class="magic 13">
-    13
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-  </div>
-  <hr>
-  <div class="magic 13*4">
-    13*4
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-  </div>
-  <hr>
-
 
 </section>
 

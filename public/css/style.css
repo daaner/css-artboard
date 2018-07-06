@@ -1,64 +1,86 @@
-body {
-  background-color: #eaeaea;
-  font-family: sans-serif; }
+.magic > div:nth-last-child(4n+1):first-child ~ div:last-child {
+  width: 426.66667px;
+  height: 500px; }
 
-.main {
-  width: 1000px;
-  margin: 10em auto;
-  background-color: #fff;
-  min-height: 50vh; }
-  .main .header {
-    text-align: center;
-    text-transform: uppercase; }
+.magic > div:nth-last-child(4n+2):first-child ~ div:last-child {
+  width: 426.66667px;
+  height: 250px;
+  margin-left: -426.66667px;
+  margin-top: 250px; }
+
+.magic > div:nth-last-child(4n+2):first-child ~ div:nth-last-child(2) {
+  width: 426.66667px;
+  height: 250px; }
+
+.magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(3) {
+  width: 426.66667px;
+  height: 500px; }
+
+.magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(2) {
+  width: 426.66667px;
+  height: 250px; }
+
+.magic > div:nth-last-child(4n+3):first-child ~ div:last-child {
+  width: 426.66667px;
+  height: 250px;
+  margin-left: -426.66667px;
+  margin-top: 250px; }
+
+.magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(4) {
+  width: 426.66667px;
+  height: 500px; }
+
+.magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(3) {
+  width: 853.33333px;
+  height: 250px; }
+
+.magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(2) {
+  width: 426.66667px;
+  height: 250px;
+  margin-left: -853.33333px;
+  margin-top: 250px; }
+
+.magic > div:nth-last-child(4n+4):first-child ~ div:last-child {
+  width: 426.66667px;
+  height: 250px;
+  margin-top: 250px; }
+
+.magic > div:nth-child(4n+1) {
+  width: 426.66667px;
+  height: 500px; }
+
+.magic > div:nth-child(4n+2) {
+  width: 853.33333px;
+  height: 250px; }
+
+.magic > div:nth-child(4n+3) {
+  width: 426.66667px;
+  height: 250px;
+  margin-left: -853.33333px;
+  margin-top: 250px; }
+
+.magic > div:nth-child(4n+4) {
+  width: 426.66667px;
+  height: 250px;
+  margin-top: 250px; }
 
 .magic {
-  width: 1000px;
-  flex-basis: 1000px;
+  width: 1280px;
+  flex-basis: 1280px;
   display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   flex-direction: row;
   flex-shrink: 0;
-  position: relative; }
+  position: relative;
+  overflow-x: auto; }
   .magic > div {
     display: flex;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     flex-shrink: 0; }
-  .magic .left_block {
-    background-color: brown;
-    width: 333.33333px;
-    height: 500px; }
-    .magic .left_block:before {
-      content: '|'; }
-  .magic .top_block {
-    background-color: yellow;
-    width: 666.66667px;
-    height: 250px; }
-    .magic .top_block:before {
-      content: '--'; }
-  .magic .sql_block {
-    background-color: cyan;
-    width: 333.33333px;
-    height: 250px;
-    margin-left: -666.66667px;
-    margin-top: 250px; }
-    .magic .sql_block:before {
-      content: 'ol'; }
-  .magic .sqr_block {
-    background-color: green;
-    width: 333.33333px;
-    height: 250px;
-    margin-top: 250px; }
-    .magic .sqr_block:before {
-      content: 'or'; }
-  .magic .sqt_block {
-    background-color: blue;
-    width: 333.33333px;
-    height: 250px; }
-    .magic .sqt_block:before {
-      content: 'ot'; }
-  .magic .sqb_block {
-    background-color: red;
-    width: 333.33333px;
-    height: 250px;
-    margin-left: -333.33333px;
-    margin-top: 250px; }
-    .magic .sqb_block:before {
-      content: 'ob'; }

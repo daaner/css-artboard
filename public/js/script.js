@@ -73,7 +73,7 @@ module.exports = __webpack_require__(3);
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
 // PROD
 // require ('./js/backtotop.js');
@@ -81,24 +81,11 @@ module.exports = __webpack_require__(3);
 
 
 // DEV
-// проверка и версия скриптов
-__webpack_require__ (2);
+// require ('./js/test.js');
 
 
 /***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-var msg;
-if (window.jQuery) {
-    msg = 'Версия jQuery: ' + jQuery.fn.jquery;
-} else {
-    msg = 'jQuery не установлен';
-}
-console.log(msg);
-
-
-/***/ }),
+/* 2 */,
 /* 3 */
 /***/ (function(module, exports) {
 
