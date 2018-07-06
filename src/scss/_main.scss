@@ -1,13 +1,17 @@
+$content_width: 1000px;
+$content_height: 500px;
+
+
 body {
   background-color: #eaeaea;
   font-family: sans-serif;
 }
 
 .main {
-  width: 1280px;
+  width: $content_width;
   margin: 10em auto;
   background-color: #fff;
-  padding: 1em;
+  // padding: 1em;
   min-height: 50vh;
 
   .header {

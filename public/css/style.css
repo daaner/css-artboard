@@ -3,124 +3,62 @@ body {
   font-family: sans-serif; }
 
 .main {
-  width: 1280px;
+  width: 1000px;
   margin: 10em auto;
   background-color: #fff;
-  padding: 1em;
   min-height: 50vh; }
   .main .header {
     text-align: center;
     text-transform: uppercase; }
 
 .magic {
+  width: 1000px;
+  flex-basis: 1000px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
+  flex-shrink: 0;
+  position: relative; }
   .magic > div {
-    margin: 1em;
-    text-align: center;
-    background-color: #ccc;
-    position: relative;
-    height: 1em;
-    width: 1em; }
-    .magic > div:before {
-      position: absolute;
-      content: '0'; }
-
-.magic > div:nth-child(4n+1) {
-  background-color: brown;
-  width: 2em;
-  height: 4em; }
-  .magic > div:nth-child(4n+1):before {
-    content: '|'; }
-
-.magic > div:nth-child(4n+2) {
-  background-color: yellow;
-  width: 4em;
-  height: 2em; }
-  .magic > div:nth-child(4n+2):before {
-    content: '--'; }
-
-.magic > div:nth-child(4n+3) {
-  background-color: cyan;
-  width: 2em;
-  height: 2em; }
-  .magic > div:nth-child(4n+3):before {
-    content: 'ol'; }
-
-.magic > div:nth-child(4n+4) {
-  background-color: cyan;
-  width: 2em;
-  height: 2em; }
-  .magic > div:nth-child(4n+4):before {
-    content: 'or'; }
-
-.magic > div:nth-last-child(4n+1):first-child ~ div:last-child {
-  background-color: brown;
-  width: 2em;
-  height: 4em; }
-  .magic > div:nth-last-child(4n+1):first-child ~ div:last-child:before {
-    content: '|'; }
-
-.magic > div:nth-last-child(4n+2):first-child ~ div:last-child {
-  background-color: cyan;
-  width: 2em;
-  height: 2em; }
-  .magic > div:nth-last-child(4n+2):first-child ~ div:last-child:before {
-    content: 'ol'; }
-
-.magic > div:nth-last-child(4n+2):first-child ~ div:nth-last-child(2) {
-  background-color: cyan;
-  width: 2em;
-  height: 2em; }
-  .magic > div:nth-last-child(4n+2):first-child ~ div:nth-last-child(2):before {
-    content: 'ot'; }
-
-.magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(3) {
-  background-color: brown;
-  width: 2em;
-  height: 4em; }
-  .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(3):before {
-    content: '|'; }
-
-.magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(2) {
-  background-color: cyan;
-  width: 2em;
-  height: 2em; }
-  .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(2):before {
-    content: 'ot'; }
-
-.magic > div:nth-last-child(4n+3):first-child ~ div:last-child {
-  background-color: cyan;
-  width: 2em;
-  height: 2em; }
-  .magic > div:nth-last-child(4n+3):first-child ~ div:last-child:before {
-    content: 'ol'; }
-
-.magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(4) {
-  background-color: brown;
-  width: 2em;
-  height: 4em; }
-  .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(4):before {
-    content: '|'; }
-
-.magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(3) {
-  background-color: yellow;
-  width: 4em;
-  height: 2em; }
-  .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(3):before {
-    content: '--'; }
-
-.magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(2) {
-  background-color: cyan;
-  width: 2em;
-  height: 2em; }
-  .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(2):before {
-    content: 'ol'; }
-
-.magic > div:nth-last-child(4n+4):first-child ~ div:last-child {
-  background-color: cyan;
-  width: 2em;
-  height: 2em; }
-  .magic > div:nth-last-child(4n+4):first-child ~ div:last-child:before {
-    content: 'or'; }
+    display: flex;
+    flex-shrink: 0; }
+  .magic .left_block {
+    background-color: brown;
+    width: 333.33333px;
+    height: 500px; }
+    .magic .left_block:before {
+      content: '|'; }
+  .magic .top_block {
+    background-color: yellow;
+    width: 666.66667px;
+    height: 250px; }
+    .magic .top_block:before {
+      content: '--'; }
+  .magic .sql_block {
+    background-color: cyan;
+    width: 333.33333px;
+    height: 250px;
+    margin-left: -666.66667px;
+    margin-top: 250px; }
+    .magic .sql_block:before {
+      content: 'ol'; }
+  .magic .sqr_block {
+    background-color: green;
+    width: 333.33333px;
+    height: 250px;
+    margin-top: 250px; }
+    .magic .sqr_block:before {
+      content: 'or'; }
+  .magic .sqt_block {
+    background-color: blue;
+    width: 333.33333px;
+    height: 250px; }
+    .magic .sqt_block:before {
+      content: 'ot'; }
+  .magic .sqb_block {
+    background-color: red;
+    width: 333.33333px;
+    height: 250px;
+    margin-left: -333.33333px;
+    margin-top: 250px; }
+    .magic .sqb_block:before {
+      content: 'ob'; }

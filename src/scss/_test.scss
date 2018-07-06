@@ -1,0 +1,67 @@
+// $content_width: 1280px;
+
+$b_width: ($content_width /3);
+$b_height: ($content_height /2);
+
+.magic {
+  width: $content_width;
+  flex-basis: $content_width;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  position: relative;
+  // overflow-x: auto;
+
+
+  & > div {
+    display: flex;
+    flex-shrink: 0;
+  }
+
+
+  .left_block {
+    &:before{content:'|';}
+    background-color: brown;
+    width: $b_width;
+    height: ($b_height *2);
+
+  }
+  .top_block {
+    &:before{content:'--';}
+    background-color: yellow;
+    width: ($b_width *2);
+    height: $b_height;
+
+  }
+  .sql_block {
+    &:before{content:'ol';}
+    background-color: cyan;
+    width: $b_width;
+    height: $b_height;
+    margin-left: -($b_width *2);
+    margin-top: $b_height;
+
+  }
+  .sqr_block {
+    &:before{content:'or';}
+    background-color: green;
+    width: $b_width;
+    height: $b_height;
+    margin-top: $b_height;
+  }
+
+  .sqt_block {
+    &:before{content:'ot';}
+    background-color: blue;
+    width: $b_width;
+    height: $b_height;
+  }
+  .sqb_block {
+    &:before{content:'ob';}
+    background-color: red;
+    width: $b_width;
+    height: $b_height;
+    margin-left: -$b_width;
+    margin-top: $b_height;
+  }
+}
