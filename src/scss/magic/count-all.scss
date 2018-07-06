@@ -1,7 +1,11 @@
 //all block
 .magic {
+  & > div:nth-child(1) {
+    @include left_block_media_fix_first;
+  }
   & > div:nth-child(4n+1) {
     @include left_block;
+    @include left_block_media_fix;
   }
   & > div:nth-child(4n+2) {
     @include top_block;

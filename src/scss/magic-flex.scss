@@ -1,6 +1,9 @@
 $content_width: 100% !default;
 $content_height: 500px !default;
 
+$content_width_media: ($content_width /2);
+$content_height_media: ($content_height *2);
+
 $b_width: ($content_width /3);
 $b_height: ($content_height /2);
 
@@ -30,4 +33,13 @@ $b_height: ($content_height /2);
     display: -webkit-flex;
     flex-shrink: 0;
   }
+
+}
+
+@media screen and (max-width: 750px) {
+  .magic {
+    overflow-x: hidden;
+    flex-wrap: wrap;
+  }
+
 }

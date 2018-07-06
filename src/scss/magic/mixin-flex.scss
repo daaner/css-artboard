@@ -4,6 +4,26 @@
 @mixin left_block {
   width: $b_width;
   height: ($b_height *2);
+  @media screen and (max-width: 750px) {
+    width: $content_width_media;
+    height: $content_height_media;
+  }
+}
+@mixin left_block_media {
+  @media screen and (max-width: 750px) {
+    width: ($content_width_media *2);
+    height: ($content_height_media /2);
+  }
+}
+@mixin left_block_media_fix {
+  @media screen and (max-width: 750px) {
+    margin-left: -$content_width_media;
+  }
+}
+@mixin left_block_media_fix_first {
+  @media screen and (max-width: 750px) {
+    margin-left: 0!important;
+  }
 }
 
 // 0XX
@@ -12,6 +32,11 @@
 @mixin top_block {
   width: ($b_width *2);
   height: $b_height;
+  @media screen and (max-width: 750px) {
+    width: $content_width_media;
+    height: $content_height_media;
+    margin-top: ($content_height_media /2);
+  }
 }
 
 // 000
@@ -22,6 +47,18 @@
   height: $b_height;
   margin-left: -($b_width *2);
   margin-top: $b_height;
+  @media screen and (max-width: 750px) {
+    width: $content_width_media;
+    height: ($content_height_media /2);
+    margin: 0;
+    margin-left: $content_width_media;
+    margin-top: -($content_height_media *3 /2);
+  }
+}
+@mixin sql_block_fix {
+  @media screen and (max-width: 750px) {
+    margin-left: -$content_width_media;
+  }
 }
 
 
@@ -32,6 +69,11 @@
   width: $b_width;
   height: $b_height;
   margin-top: $b_height;
+  @media screen and (max-width: 750px) {
+    width: $content_width_media;
+    height: ($content_height_media /2);
+    margin-top: -($content_height_media /2);;
+  }
 }
 
 
@@ -41,6 +83,16 @@
 @mixin sqt_block {
   width: $b_width;
   height: $b_height;
+  @media screen and (max-width: 750px) {
+    width: $content_width_media;
+    height: ($content_height_media /2);
+    margin-left: -$content_width_media;
+  }
+}
+@mixin sqt_block_fix {
+  @media screen and (max-width: 750px) {
+    margin-left: -($content_width_media *2);
+  }
 }
 
 // 0  or 00
@@ -51,4 +103,14 @@
   height: $b_height;
   margin-left: -$b_width;
   margin-top: $b_height;
+  @media screen and (max-width: 750px) {
+    width: $content_width_media;
+    height: ($content_height_media /2);
+    margin: 0;
+  }
+}
+@mixin sqb_block_fix {
+  @media screen and (max-width: 750px) {
+    margin-top: ($content_height_media /2);
+  }
 }

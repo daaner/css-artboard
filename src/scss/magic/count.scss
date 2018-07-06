@@ -2,6 +2,7 @@
   & > div:nth-last-child(4n+1):first-child {
     ~ div:last-child {
       @include left_block;
+      @include left_block_media;
     }
   }
 
@@ -18,20 +19,24 @@
   & > div:nth-last-child(4n+3):first-child {
     ~ div:nth-last-child(3) {
       @include left_block;
+      @include left_block_media;
     }
 
     ~ div:nth-last-child(2) {
       @include sqt_block;
+      @include sqt_block_fix;
     }
 
     ~ div:last-child {
       @include sqb_block;
+      @include sqb_block_fix;
     }
   }
 
   & > div:nth-last-child(4n+4):first-child {
     ~ div:nth-last-child(4) {
       @include left_block;
+      @include sql_block_fix;
     }
 
     ~ div:nth-last-child(3) {

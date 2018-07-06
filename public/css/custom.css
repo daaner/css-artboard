@@ -16,6 +16,7 @@ body {
   font-weight: 700;
   border-bottom: 1px solid #ddd;
   margin: 2em 0 0;
+  font-size: 4em;
 }
 
 .magic {
@@ -32,4 +33,9 @@ body {
   background-color: #ccc;
   background-image: url('/img/fon.jpg');
   background-size: cover;
+}
+@media screen and (max-width: 750px) {
+  .inner {
+    font-size: 4em;
+  }
 }
