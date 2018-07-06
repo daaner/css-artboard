@@ -46,14 +46,14 @@ body {
   width: 2em;
   height: 2em; }
   .magic > div:nth-child(4n+3):before {
-    content: 'o'; }
+    content: 'ol'; }
 
 .magic > div:nth-child(4n+4) {
   background-color: cyan;
   width: 2em;
   height: 2em; }
   .magic > div:nth-child(4n+4):before {
-    content: 'o'; }
+    content: 'or'; }
 
 .magic > div:nth-last-child(4n+1):first-child ~ div:last-child {
   background-color: brown;
@@ -67,14 +67,14 @@ body {
   width: 2em;
   height: 2em; }
   .magic > div:nth-last-child(4n+2):first-child ~ div:last-child:before {
-    content: 'o'; }
+    content: 'ol'; }
 
 .magic > div:nth-last-child(4n+2):first-child ~ div:nth-last-child(2) {
   background-color: cyan;
   width: 2em;
   height: 2em; }
   .magic > div:nth-last-child(4n+2):first-child ~ div:nth-last-child(2):before {
-    content: 'o'; }
+    content: 'ot'; }
 
 .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(3) {
   background-color: brown;
@@ -88,14 +88,14 @@ body {
   width: 2em;
   height: 2em; }
   .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(2):before {
-    content: 'o'; }
+    content: 'ot'; }
 
 .magic > div:nth-last-child(4n+3):first-child ~ div:last-child {
   background-color: cyan;
   width: 2em;
   height: 2em; }
   .magic > div:nth-last-child(4n+3):first-child ~ div:last-child:before {
-    content: 'o'; }
+    content: 'ol'; }
 
 .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(4) {
   background-color: brown;
@@ -116,11 +116,11 @@ body {
   width: 2em;
   height: 2em; }
   .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(2):before {
-    content: 'o'; }
+    content: 'ol'; }
 
 .magic > div:nth-last-child(4n+4):first-child ~ div:last-child {
   background-color: cyan;
   width: 2em;
   height: 2em; }
   .magic > div:nth-last-child(4n+4):first-child ~ div:last-child:before {
-    content: 'o'; }
+    content: 'or'; }

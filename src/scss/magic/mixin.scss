@@ -17,9 +17,27 @@
 }
 
 // 000
+// 00x
+@mixin sqr_block {
+  &:before{content:'or';}
+  background-color: cyan;
+  width: 2em;
+  height: 2em;
+}
+
+// 000
 // 0X0
-@mixin sq_block {
-  &:before{content:'o';}
+@mixin sql_block {
+  &:before{content:'ol';}
+  background-color: cyan;
+  width: 2em;
+  height: 2em;
+}
+
+// 00x
+// 000
+@mixin sqt_block {
+  &:before{content:'ot';}
   background-color: cyan;
   width: 2em;
   height: 2em;

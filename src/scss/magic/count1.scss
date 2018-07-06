@@ -7,10 +7,10 @@
     @include top_block;
   }
   & > div:nth-child(4n+3) {
-    @include sq_block;
+    @include sql_block;
   }
   & > div:nth-child(4n+4) {
-    @include sq_block;
+    @include sqr_block;
   }
 
 }
