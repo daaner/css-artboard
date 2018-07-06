@@ -1,72 +1,72 @@
 .magic > div:nth-last-child(4n+1):first-child ~ div:last-child {
-  width: 426.66667px;
+  width: 33.33333%;
   height: 500px; }
 
 .magic > div:nth-last-child(4n+2):first-child ~ div:last-child {
-  width: 426.66667px;
+  width: 33.33333%;
   height: 250px;
-  margin-left: -426.66667px;
+  margin-left: -33.33333%;
   margin-top: 250px; }
 
 .magic > div:nth-last-child(4n+2):first-child ~ div:nth-last-child(2) {
-  width: 426.66667px;
+  width: 33.33333%;
   height: 250px; }
 
 .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(3) {
-  width: 426.66667px;
+  width: 33.33333%;
   height: 500px; }
 
 .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(2) {
-  width: 426.66667px;
+  width: 33.33333%;
   height: 250px; }
 
 .magic > div:nth-last-child(4n+3):first-child ~ div:last-child {
-  width: 426.66667px;
+  width: 33.33333%;
   height: 250px;
-  margin-left: -426.66667px;
+  margin-left: -33.33333%;
   margin-top: 250px; }
 
 .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(4) {
-  width: 426.66667px;
+  width: 33.33333%;
   height: 500px; }
 
 .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(3) {
-  width: 853.33333px;
+  width: 66.66667%;
   height: 250px; }
 
 .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(2) {
-  width: 426.66667px;
+  width: 33.33333%;
   height: 250px;
-  margin-left: -853.33333px;
+  margin-left: -66.66667%;
   margin-top: 250px; }
 
 .magic > div:nth-last-child(4n+4):first-child ~ div:last-child {
-  width: 426.66667px;
+  width: 33.33333%;
   height: 250px;
   margin-top: 250px; }
 
 .magic > div:nth-child(4n+1) {
-  width: 426.66667px;
+  width: 33.33333%;
   height: 500px; }
 
 .magic > div:nth-child(4n+2) {
-  width: 853.33333px;
+  width: 66.66667%;
   height: 250px; }
 
 .magic > div:nth-child(4n+3) {
-  width: 426.66667px;
+  width: 33.33333%;
   height: 250px;
-  margin-left: -853.33333px;
+  margin-left: -66.66667%;
   margin-top: 250px; }
 
 .magic > div:nth-child(4n+4) {
-  width: 426.66667px;
+  width: 33.33333%;
   height: 250px;
   margin-top: 250px; }
 
 .magic {
-  width: 1280px;
-  flex-basis: 1280px;
+  width: 100%;
+  flex-basis: 100%;
   display: flex;
   display: -webkit-box;
   display: -moz-box;
