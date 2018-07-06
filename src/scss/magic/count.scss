@@ -1,32 +1,36 @@
 //left_block
 //top_block
-//sq_block
-
-@import 'scss/magic/count1';
+//sqt_block
+//sqr_block
+//sql_block
+@import 'scss/magic/count-all'; // last block
 
 .magic {
   & > div:nth-last-child(4n+1):first-child {
     ~ div:last-child {
-        @include left_block;
+      @include left_block;
     }
   }
 
   & > div:nth-last-child(4n+2):first-child {
     ~ div:last-child {
-        @include sql_block;
+      @include sql_block;
     }
+
     ~ div:nth-last-child(2) {
-        @include sqt_block;
+      @include sqt_block;
     }
   }
 
   & > div:nth-last-child(4n+3):first-child {
     ~ div:nth-last-child(3) {
-        @include left_block;
+      @include left_block;
     }
+
     ~ div:nth-last-child(2) {
       @include sqt_block;
     }
+
     ~ div:last-child {
       @include sql_block;
     }
@@ -36,16 +40,17 @@
     ~ div:nth-last-child(4) {
       @include left_block;
     }
+
     ~ div:nth-last-child(3) {
       @include top_block;
     }
+
     ~ div:nth-last-child(2) {
-        @include sql_block;
+      @include sql_block;
     }
+
     ~ div:last-child {
       @include sqr_block;
     }
   }
-
-
 }
