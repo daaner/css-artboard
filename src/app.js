@@ -1,8 +1,5 @@
 // PROD
-import fontawesome from "@fortawesome/fontawesome-free";
-import solid from '@fortawesome/fontawesome-free-solid';
-import regular from '@fortawesome/fontawesome-free-regular';
-require ('./js/backtotop.js');
+// require ('./js/backtotop.js');
 
 
 

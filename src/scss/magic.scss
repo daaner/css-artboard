@@ -1,0 +1,21 @@
+.magic {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // margin-bottom: 0.5em;
+
+  & > div {
+    margin: 1em;
+    // padding: 1em;
+    text-align: center;
+    background-color: #ccc;
+    position: relative;
+    height: 1em;
+    width: 1em;
+
+    // &:before {
+    //   position: absolute;
+    //   content: '0';
+    // }
+  }
+}

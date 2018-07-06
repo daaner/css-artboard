@@ -1,0 +1,51 @@
+//left_block
+//top_block
+//sq_block
+
+@import 'scss/magic/count1';
+
+.magic {
+  & > div:nth-last-child(4n+1):first-child {
+    ~ div:last-child {
+        @include left_block;
+    }
+  }
+
+  & > div:nth-last-child(4n+2):first-child {
+    ~ div:last-child {
+        @include sq_block;
+    }
+    ~ div:nth-last-child(2) {
+        @include sq_block;
+    }
+  }
+
+  & > div:nth-last-child(4n+3):first-child {
+    ~ div:nth-last-child(3) {
+        @include left_block;
+    }
+    ~ div:nth-last-child(2) {
+      @include sq_block;
+    }
+    ~ div:last-child {
+      @include sq_block;
+    }
+  }
+
+  & > div:nth-last-child(4n+4):first-child {
+    ~ div:nth-last-child(4) {
+      @include left_block;
+    }
+    ~ div:nth-last-child(3) {
+      @include top_block;
+    }
+    ~ div:nth-last-child(2) {
+        @include sq_block;
+    }
+    ~ div:last-child {
+      @include sq_block;
+    }
+  }
+
+
+}
