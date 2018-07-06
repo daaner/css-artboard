@@ -1,8 +1,8 @@
 // X00
 // X00
 @mixin left_block {
-  // &:before{content:'|';}
-  // background-color: brown;
+  &:before{content:'|';}
+  background-color: brown;
   width: 2em;
   height: 4em;
 }
@@ -10,8 +10,8 @@
 // 0XX
 // 000
 @mixin top_block {
-  // &:before{content:'--';}
-  // background-color: yellow;
+  &:before{content:'--';}
+  background-color: yellow;
   width: 4em;
   height: 2em;
 }
@@ -19,26 +19,17 @@
 // 000
 // 0X0
 @mixin sq_block {
-  // &:before{content:'o';}
-  // background-color: cyan;
+  &:before{content:'o';}
+  background-color: cyan;
   width: 2em;
   height: 2em;
 }
 
-
-@mixin a11 {
-  &:before{content:'1';}
-  // background-color: brown;
-}
-@mixin a12 {
-  &:before{content:'2';}
-  // background-color: yellow;
-}
-@mixin a13 {
-  &:before{content:'3';}
-  // background-color: cyan;
-}
-@mixin a14 {
-  &:before{content:'4';}
-  // background-color: green;
+// XXX
+// XXX
+@mixin full_block {
+  &:before{content:'o';}
+  background-color: #ccc;
+  width: 4em;
+  height: 4em;
 }

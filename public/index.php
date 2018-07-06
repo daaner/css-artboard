@@ -11,7 +11,7 @@
 <section class="main">
   <h1 class="header">test</h1>
 
-  <!-- <div class="magic 1">
+  <div class="magic 1">
     1
     <div></div>
   </div>
@@ -39,7 +39,7 @@
     <div></div>
     <div></div>
   </div>
-  <hr> -->
+  <hr>
 
 
   <div class="magic 5">
