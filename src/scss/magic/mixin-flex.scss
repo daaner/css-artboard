@@ -46,7 +46,11 @@
   width: $b_width;
   height: $b_height;
   margin-left: -($b_width *2);
-  margin-top: $b_height;
+  // margin-top: $b_height;
+  -ms-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  transform: translateY(100%);
   @media screen and (max-width: 750px) {
     width: $content_width_media;
     height: ($content_height_media /2);
@@ -68,7 +72,10 @@
 @mixin sqr_block {
   width: $b_width;
   height: $b_height;
-  margin-top: $b_height;
+  -ms-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  transform: translateY(100%);
   @media screen and (max-width: 750px) {
     width: $content_width_media;
     height: ($content_height_media /2);
@@ -102,7 +109,11 @@
   width: $b_width;
   height: $b_height;
   margin-left: -$b_width;
-  margin-top: $b_height;
+  -ms-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  transform: translateY(100%);
+  // margin-top: $b_height;
   @media screen and (max-width: 750px) {
     width: $content_width_media;
     height: ($content_height_media /2);
