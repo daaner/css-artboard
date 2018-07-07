@@ -4,7 +4,7 @@ body {
 }
 
 .main {
-  width: 1280px;
+  max-width: 1280px;
   margin: 2em auto;
   background-color: #fff;
   min-height: 500px;
@@ -22,6 +22,11 @@ body {
 .magic {
   /*height: 500px;*/
 }
+@media screen and (max-width: 750px) {
+  /*.magic {
+    height: 1vh;
+  }*/
+}
 
 .inner {
   width: 100%;
@@ -35,7 +40,5 @@ body {
   background-size: cover;
 }
 @media screen and (max-width: 750px) {
-  .inner {
-    font-size: 4em;
-  }
+
 }
