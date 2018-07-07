@@ -1,5 +1,6 @@
 .magic > div:nth-last-child(4n+1):first-child ~ div:last-child {
   width: 33.33333%;
+  flex-basis: 33.33333%;
   height: 100%; }
   @media screen and (max-width: 750px) {
     .magic > div:nth-last-child(4n+1):first-child ~ div:last-child {
@@ -12,6 +13,7 @@
 
 .magic > div:nth-last-child(4n+2):first-child ~ div:last-child {
   width: 33.33333%;
+  flex-basis: 33.33333%;
   height: 50%;
   margin-left: -33.33333%;
   -ms-transform: translateY(100%);
@@ -26,6 +28,7 @@
 
 .magic > div:nth-last-child(4n+2):first-child ~ div:nth-last-child(2) {
   width: 33.33333%;
+  flex-basis: 33.33333%;
   height: 50%; }
   @media screen and (max-width: 750px) {
     .magic > div:nth-last-child(4n+2):first-child ~ div:nth-last-child(2) {
@@ -35,6 +38,7 @@
 
 .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(3) {
   width: 33.33333%;
+  flex-basis: 33.33333%;
   height: 100%; }
   @media screen and (max-width: 750px) {
     .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(3) {
@@ -47,6 +51,7 @@
 
 .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(2) {
   width: 33.33333%;
+  flex-basis: 33.33333%;
   height: 50%; }
   @media screen and (max-width: 750px) {
     .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(2) {
@@ -59,6 +64,7 @@
 
 .magic > div:nth-last-child(4n+3):first-child ~ div:last-child {
   width: 33.33333%;
+  flex-basis: 33.33333%;
   height: 50%;
   margin-left: -33.33333%;
   -ms-transform: translateY(100%);
@@ -76,6 +82,7 @@
 
 .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(4) {
   width: 33.33333%;
+  flex-basis: 33.33333%;
   height: 100%; }
   @media screen and (max-width: 750px) {
     .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(4) {
@@ -87,6 +94,7 @@
 
 .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(3) {
   width: 66.66667%;
+  flex-basis: 66.66667%;
   height: 50%; }
   @media screen and (max-width: 750px) {
     .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(3) {
@@ -96,6 +104,7 @@
 
 .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(2) {
   width: 33.33333%;
+  flex-basis: 33.33333%;
   height: 50%;
   margin-left: -66.66667%;
   -ms-transform: translateY(100%);
@@ -112,6 +121,7 @@
 
 .magic > div:nth-last-child(4n+4):first-child ~ div:last-child {
   width: 33.33333%;
+  flex-basis: 33.33333%;
   height: 50%;
   -ms-transform: translateY(100%);
   -webkit-transform: translateY(100%);
@@ -129,6 +139,7 @@
 
 .magic > div:nth-child(4n+1) {
   width: 33.33333%;
+  flex-basis: 33.33333%;
   height: 100%; }
   @media screen and (max-width: 750px) {
     .magic > div:nth-child(4n+1) {
@@ -140,6 +151,7 @@
 
 .magic > div:nth-child(4n+2) {
   width: 66.66667%;
+  flex-basis: 66.66667%;
   height: 50%; }
   @media screen and (max-width: 750px) {
     .magic > div:nth-child(4n+2) {
@@ -149,6 +161,7 @@
 
 .magic > div:nth-child(4n+3) {
   width: 33.33333%;
+  flex-basis: 33.33333%;
   height: 50%;
   margin-left: -66.66667%;
   -ms-transform: translateY(100%);
@@ -165,6 +178,7 @@
 
 .magic > div:nth-child(4n+4) {
   width: 33.33333%;
+  flex-basis: 33.33333%;
   height: 50%;
   -ms-transform: translateY(100%);
   -webkit-transform: translateY(100%);
@@ -187,14 +201,14 @@
   flex-direction: row;
   flex-shrink: 0;
   position: relative;
+  overflow-y: hidden;
   overflow-x: auto; }
   .magic > div {
     display: flex;
-    display: flex;
     display: -webkit-box;
     display: -moz-box;
-    display: -ms-flexbox;
     display: -webkit-flex;
+    display: -ms-flexbox;
     flex-shrink: 0;
     box-sizing: border-box;
     overflow: hidden; }

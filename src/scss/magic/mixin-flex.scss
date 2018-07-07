@@ -3,6 +3,7 @@
 // left vertical block
 @mixin left_block {
   width: $b_width;
+  flex-basis: $b_width;
   height: ($b_height *2);
   @media screen and (max-width: 750px) {
     width: $content_width_media;
@@ -31,6 +32,7 @@
 // top horizontal block
 @mixin top_block {
   width: ($b_width *2);
+  flex-basis: ($b_width *2);
   height: $b_height;
   @media screen and (max-width: 750px) {
     width: $content_width_media;
@@ -44,6 +46,7 @@
 // left bottom square block
 @mixin sql_block {
   width: $b_width;
+  flex-basis: $b_width;
   height: $b_height;
   margin-left: -($b_width *2);
   // margin-top: $b_height;
@@ -71,6 +74,7 @@
 // right bottom square block
 @mixin sqr_block {
   width: $b_width;
+  flex-basis: $b_width;
   height: $b_height;
   -ms-transform: translateY(100%);
   -webkit-transform: translateY(100%);
@@ -89,6 +93,7 @@
 // left top square block
 @mixin sqt_block {
   width: $b_width;
+  flex-basis: $b_width;
   height: $b_height;
   @media screen and (max-width: 750px) {
     width: $content_width_media;
@@ -107,6 +112,7 @@
 // left top square block
 @mixin sqb_block {
   width: $b_width;
+  flex-basis: $b_width;
   height: $b_height;
   margin-left: -$b_width;
   -ms-transform: translateY(100%);
