@@ -4,6 +4,7 @@
       @include left_block;
       @include left_block_media_pad;
       @include top_block_media_pad_fix;
+      @include left_block_media_phone;
     }
   }
 
@@ -11,11 +12,13 @@
     ~ div:last-child {
       @include sqb_block;
       @include sqb_block_media_pad;
+      @include sqb_block_media_phone;
     }
 
     ~ div:nth-last-child(2) {
       @include sqt_block;
       @include sqt_block_media_pad;
+      @include sqt_block_media_phone;
     }
   }
 
@@ -24,16 +27,19 @@
       @include left_block;
       @include left_block_media_pad;
       @include top_block_media_pad_fix;
+      @include left_block_media_phone;
     }
 
     ~ div:nth-last-child(2) {
       @include sqt_block;
       @include sqt_block_media_pad;
+      @include sqt_block_media_phone;
     }
 
     ~ div:last-child {
       @include sqb_block;
       @include sqb_block_media_pad;
+      @include sqb_block_media_phone;
     }
   }
 
@@ -41,21 +47,25 @@
     ~ div:nth-last-child(4) {
       @include left_block;
       @include left_block_media_pad;
+      @include left_block_media_phone;
     }
 
     ~ div:nth-last-child(3) {
       @include top_block;
       @include top_block_media_pad;
+      @include top_block_media_phone;
     }
 
     ~ div:nth-last-child(2) {
       @include sql_block;
       @include sql_block_media_pad;
+      @include sql_block_media_phone;
     }
 
     ~ div:last-child {
       @include sqr_block;
       @include sqr_block_media_pad;
+      @include sqr_block_media_phone;
     }
   }
 }

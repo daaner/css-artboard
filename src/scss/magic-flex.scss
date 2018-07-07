@@ -8,9 +8,12 @@ $content_height_media: ($content_height_mobile *2);
 $b_width: ($content_width /3);
 $b_height: ($content_height /2);
 
+$media_phone_enable: true; //true or false
+
 //mixin
 @import 'scss/magic/mixin-flex';
 @import 'scss/magic/media_pad'; // media Pad
+@import 'scss/magic/media_phone'; // media Phone if you want
 
 @import 'scss/magic/count'; // last blocks
 @import 'scss/magic/count-all'; // all blocks
