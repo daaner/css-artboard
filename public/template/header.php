@@ -28,7 +28,6 @@
     <meta content="width" name="MobileOptimized">
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta name="robots" content="index,follow">
-    <meta http-equiv="content-language" content="ru">
 
     <?php //favicon
       $fav = $base . 'favicon.ico';
@@ -58,7 +57,7 @@
     <meta property="og:site_name" content="<?php echo $site_name ?>">
     <meta property="og:url" content="<?php echo $base ?>">
     <meta property="og:locale" content="en-GB">
-    
+
 
   </head>
   <body>

@@ -25,12 +25,6 @@ body {
   max-height: 100vh;
 }
 
-@media screen and (max-width: 750px) {
-  .magic {
-    height: 500px;
-  }
-}
-
 .inner {
   width: 100%;
   height: auto;
@@ -42,10 +36,9 @@ body {
   background-color: #eee;
   background-image: url('/img/fon.jpg');
   background-size: cover;
+  background-position: center;
 }
 .inner_text {
   background-image: none;
   background-color: lightcoral;
 }
-
-@media screen and (max-width: 750px) {}

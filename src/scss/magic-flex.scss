@@ -8,9 +8,13 @@ $content_height_media: ($content_height_mobile *2);
 $b_width: ($content_width /3);
 $b_height: ($content_height /2);
 
+//mixin
 @import 'scss/magic/mixin-flex';
+@import 'scss/magic/media_pad'; // media Pad
+
 @import 'scss/magic/count'; // last blocks
 @import 'scss/magic/count-all'; // all blocks
+
 
 .magic {
   width: $content_width;
@@ -35,14 +39,6 @@ $b_height: ($content_height /2);
     flex-shrink: 0;
     box-sizing: border-box;
     overflow: hidden;
-  }
-
-}
-
-@media screen and (max-width: 750px) {
-  .magic {
-    overflow-x: hidden;
-    flex-wrap: wrap;
   }
 
 }

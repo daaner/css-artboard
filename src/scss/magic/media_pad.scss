@@ -1,0 +1,99 @@
+// $pad: 768px !default;
+$pad: 750px !default;
+$block_width: 50% !default;
+$block_height: 50vh !default;
+
+
+
+@media screen and (max-width: $pad) {
+  .magic {
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto !important;
+    height: auto;
+    max-height: none;
+
+    & > div {
+      height: 100%; //IE11
+      height: ($block_height *2);
+      -ms-transform: none !important;
+      -webkit-transform: none !important;
+      -moz-transform: none !important;
+      transform: none !important;
+    }
+  }
+}
+
+// left_block
+@mixin left_block_media_pad {
+  @media screen and (max-width: $pad) {
+    width: $block_width;
+    flex-basis: $block_width;
+    height: ($block_height *2);
+    margin-left: -$block_width;
+  }
+}
+
+@mixin left_block_media_pad_fix {
+  @media screen and (max-width: $pad) {
+    margin-left: 0 !important;
+  }
+}
+
+//top_block
+@mixin top_block_media_pad {
+  @media screen and (max-width: $pad) {
+    width: $block_width;
+    flex-basis: $block_width;
+    height: ($block_height *2) !important;
+    margin-top: $block_height;
+  }
+}
+@mixin top_block_media_pad_fix {
+  @media screen and (max-width: $pad) {
+    width: ($block_width *2);
+    flex-basis: ($block_width *2);
+    height: $block_height;
+  }
+}
+
+//sql_block
+@mixin sql_block_media_pad {
+  @media screen and (max-width: $pad) {
+    width: $block_width;
+    flex-basis: $block_width;
+    margin-left: -$block_width !important;
+    height: $block_height;
+  }
+}
+
+//sqr_block
+@mixin sqr_block_media_pad {
+  @media screen and (max-width: $pad) {
+    width: $block_width;
+    flex-basis: $block_width;
+    height: $block_height;
+    margin-top: -$block_height;
+  }
+}
+
+//sqt_block
+@mixin sqt_block_media_pad {
+  @media screen and (max-width: $pad) {
+    width: $block_width;
+    flex-basis: $block_width;
+    height: $block_height !important;
+    margin-top: 0;
+  }
+}
+
+//sqb_block
+@mixin sqb_block_media_pad {
+  @media screen and (max-width: $pad) {
+    width: $block_width;
+    flex-basis: $block_width;
+    height: $block_height !important;
+    margin-top: 0;
+    margin-left: 0 !important;
+  }
+}
