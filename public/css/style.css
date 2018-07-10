@@ -26,29 +26,15 @@
     flex-wrap: wrap;
     height: auto; }
     .magic > div {
-      height: 100vh;
+      height: 100vw;
       -ms-transform: none !important;
       -webkit-transform: none !important;
       -moz-transform: none !important;
       transform: none !important; } }
 
-@media screen and (max-width: 576px) {
-  .magic {
-    height: auto;
-    display: block; }
-    .magic > div {
-      width: 100% !important;
-      flex-basis: 100% !important;
-      margin: 0 !important;
-      min-height: 30vh; } }
-
 @media screen and (max-width: 750px) {
   .magic > div:nth-child(1) {
     margin-left: 0 !important; } }
-
-@media screen and (max-width: 576px) {
-  .magic > div:nth-child(1) {
-    height: auto; } }
 
 .magic > div:nth-child(4n+1) {
   width: 33.33333%;
@@ -58,11 +44,8 @@
     .magic > div:nth-child(4n+1) {
       width: 50%;
       flex-basis: 50%;
-      height: 100vh;
+      height: 100vw;
       margin-left: -50%; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-child(4n+1) {
-      height: auto; } }
 
 .magic > div:nth-child(4n+2) {
   width: 66.66667%;
@@ -72,11 +55,8 @@
     .magic > div:nth-child(4n+2) {
       width: 50%;
       flex-basis: 50%;
-      height: 100vh;
-      margin-top: 50vh; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-child(4n+2) {
-      height: auto; } }
+      height: 100vw;
+      margin-top: 50vw; } }
 
 .magic > div:nth-child(4n+3) {
   width: 33.33333%;
@@ -92,10 +72,7 @@
       width: 50%;
       flex-basis: 50%;
       margin-left: -50%;
-      height: 50vh; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-child(4n+3) {
-      height: auto; } }
+      height: 50vw; } }
 
 .magic > div:nth-child(4n+4) {
   width: 33.33333%;
@@ -109,11 +86,8 @@
     .magic > div:nth-child(4n+4) {
       width: 50%;
       flex-basis: 50%;
-      height: 50vh;
-      margin-top: -50vh; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-child(4n+4) {
-      height: auto; } }
+      height: 50vw;
+      margin-top: -50vw; } }
 
 .magic > div:nth-last-child(4n+1):first-child ~ div:last-child {
   width: 33.33333%;
@@ -123,16 +97,13 @@
     .magic > div:nth-last-child(4n+1):first-child ~ div:last-child {
       width: 50%;
       flex-basis: 50%;
-      height: 100vh;
+      height: 100vw;
       margin-left: -50%; } }
   @media screen and (max-width: 750px) {
     .magic > div:nth-last-child(4n+1):first-child ~ div:last-child {
       width: 100%;
       flex-basis: 100%;
-      height: 50vh; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-last-child(4n+1):first-child ~ div:last-child {
-      height: auto; } }
+      height: 50vw; } }
 
 .magic > div:nth-last-child(4n+2):first-child ~ div:last-child {
   width: 33.33333%;
@@ -147,12 +118,9 @@
     .magic > div:nth-last-child(4n+2):first-child ~ div:last-child {
       width: 50%;
       flex-basis: 50%;
-      height: 50vh;
+      height: 50vw;
       margin-top: 0;
       margin-left: 0; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-last-child(4n+2):first-child ~ div:last-child {
-      height: auto; } }
 
 .magic > div:nth-last-child(4n+2):first-child ~ div:nth-last-child(2) {
   width: 33.33333%;
@@ -162,11 +130,8 @@
     .magic > div:nth-last-child(4n+2):first-child ~ div:nth-last-child(2) {
       width: 50%;
       flex-basis: 50%;
-      height: 50vh;
+      height: 50vw;
       margin-top: 0; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-last-child(4n+2):first-child ~ div:nth-last-child(2) {
-      height: auto; } }
 
 .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(3) {
   width: 33.33333%;
@@ -176,16 +141,13 @@
     .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(3) {
       width: 50%;
       flex-basis: 50%;
-      height: 100vh;
+      height: 100vw;
       margin-left: -50%; } }
   @media screen and (max-width: 750px) {
     .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(3) {
       width: 100%;
       flex-basis: 100%;
-      height: 50vh; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(3) {
-      height: auto; } }
+      height: 50vw; } }
 
 .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(2) {
   width: 33.33333%;
@@ -195,11 +157,8 @@
     .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(2) {
       width: 50%;
       flex-basis: 50%;
-      height: 50vh;
+      height: 50vw;
       margin-top: 0; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(2) {
-      height: auto; } }
 
 .magic > div:nth-last-child(4n+3):first-child ~ div:last-child {
   width: 33.33333%;
@@ -214,12 +173,9 @@
     .magic > div:nth-last-child(4n+3):first-child ~ div:last-child {
       width: 50%;
       flex-basis: 50%;
-      height: 50vh;
+      height: 50vw;
       margin-top: 0;
       margin-left: 0; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-last-child(4n+3):first-child ~ div:last-child {
-      height: auto; } }
 
 .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(4) {
   width: 33.33333%;
@@ -229,11 +185,8 @@
     .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(4) {
       width: 50%;
       flex-basis: 50%;
-      height: 100vh;
+      height: 100vw;
       margin-left: -50%; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(4) {
-      height: auto; } }
 
 .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(3) {
   width: 66.66667%;
@@ -243,11 +196,8 @@
     .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(3) {
       width: 50%;
       flex-basis: 50%;
-      height: 100vh;
-      margin-top: 50vh; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(3) {
-      height: auto; } }
+      height: 100vw;
+      margin-top: 50vw; } }
 
 .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(2) {
   width: 33.33333%;
@@ -263,10 +213,7 @@
       width: 50%;
       flex-basis: 50%;
       margin-left: -50%;
-      height: 50vh; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(2) {
-      height: auto; } }
+      height: 50vw; } }
 
 .magic > div:nth-last-child(4n+4):first-child ~ div:last-child {
   width: 33.33333%;
@@ -280,8 +227,5 @@
     .magic > div:nth-last-child(4n+4):first-child ~ div:last-child {
       width: 50%;
       flex-basis: 50%;
-      height: 50vh;
-      margin-top: -50vh; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-last-child(4n+4):first-child ~ div:last-child {
-      height: auto; } }
+      height: 50vw;
+      margin-top: -50vw; } }

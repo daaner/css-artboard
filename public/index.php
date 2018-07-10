@@ -8,7 +8,7 @@
 ?>
 <link href="<?php echo $base ?>css/custom.css" rel="stylesheet">
 
-<link href="<?php echo $base ?>css/style.css" rel="stylesheet">
+<link href="<?php echo $base ?>css/style.css?<?php echo uniqid();?>" rel="stylesheet">
 
 
 <section class="main">
