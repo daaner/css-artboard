@@ -5,11 +5,7 @@ $min-height_phone: 30vh; //work in safari only 10+, ie 11+
 @if($media_phone_enable){
   @media screen and (max-width: $phone) {
     .magic {
-      flex-wrap: wrap;
-      overflow-x: hidden;
-      overflow-y: auto;
       height: auto;
-      max-height: none;
       display: block;
 
       & > div {

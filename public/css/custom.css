@@ -21,8 +21,7 @@ body {
 }
 
 .magic {
-  height: 700px;
-  max-height: 100vh;
+  height: 80vh;
 }
 
 .inner {

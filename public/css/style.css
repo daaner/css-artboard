@@ -9,7 +9,6 @@
   flex-direction: row;
   flex-shrink: 0;
   position: relative;
-  overflow-y: hidden;
   overflow-x: auto;
   min-height: 2em; }
   .magic > div {
@@ -22,15 +21,11 @@
     box-sizing: border-box;
     overflow: hidden; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
   .magic {
     flex-wrap: wrap;
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: auto;
-    max-height: none; }
+    height: auto; }
     .magic > div {
-      height: 100%;
       height: 100vh;
       -ms-transform: none !important;
       -webkit-transform: none !important;
@@ -39,11 +34,7 @@
 
 @media screen and (max-width: 576px) {
   .magic {
-    flex-wrap: wrap;
-    overflow-x: hidden;
-    overflow-y: auto;
     height: auto;
-    max-height: none;
     display: block; }
     .magic > div {
       width: 100% !important;
@@ -51,178 +42,7 @@
       margin: 0 !important;
       min-height: 30vh; } }
 
-.magic > div:nth-last-child(4n+1):first-child ~ div:last-child {
-  width: 33.33333%;
-  flex-basis: 33.33333%;
-  height: 100%; }
-  @media screen and (max-width: 768px) {
-    .magic > div:nth-last-child(4n+1):first-child ~ div:last-child {
-      width: 50%;
-      flex-basis: 50%;
-      height: 100vh;
-      margin-left: -50%; } }
-  @media screen and (max-width: 768px) {
-    .magic > div:nth-last-child(4n+1):first-child ~ div:last-child {
-      width: 100%;
-      flex-basis: 100%;
-      height: 50vh; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-last-child(4n+1):first-child ~ div:last-child {
-      height: auto; } }
-
-.magic > div:nth-last-child(4n+2):first-child ~ div:last-child {
-  width: 33.33333%;
-  flex-basis: 33.33333%;
-  height: 50%;
-  margin-left: -33.33333%;
-  -ms-transform: translateY(100%);
-  -webkit-transform: translateY(100%);
-  -moz-transform: translateY(100%);
-  transform: translateY(100%); }
-  @media screen and (max-width: 768px) {
-    .magic > div:nth-last-child(4n+2):first-child ~ div:last-child {
-      width: 50%;
-      flex-basis: 50%;
-      height: 50vh;
-      margin-top: 0;
-      margin-left: 0; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-last-child(4n+2):first-child ~ div:last-child {
-      height: auto; } }
-
-.magic > div:nth-last-child(4n+2):first-child ~ div:nth-last-child(2) {
-  width: 33.33333%;
-  flex-basis: 33.33333%;
-  height: 50%; }
-  @media screen and (max-width: 768px) {
-    .magic > div:nth-last-child(4n+2):first-child ~ div:nth-last-child(2) {
-      width: 50%;
-      flex-basis: 50%;
-      height: 50vh;
-      margin-top: 0; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-last-child(4n+2):first-child ~ div:nth-last-child(2) {
-      height: auto; } }
-
-.magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(3) {
-  width: 33.33333%;
-  flex-basis: 33.33333%;
-  height: 100%; }
-  @media screen and (max-width: 768px) {
-    .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(3) {
-      width: 50%;
-      flex-basis: 50%;
-      height: 100vh;
-      margin-left: -50%; } }
-  @media screen and (max-width: 768px) {
-    .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(3) {
-      width: 100%;
-      flex-basis: 100%;
-      height: 50vh; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(3) {
-      height: auto; } }
-
-.magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(2) {
-  width: 33.33333%;
-  flex-basis: 33.33333%;
-  height: 50%; }
-  @media screen and (max-width: 768px) {
-    .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(2) {
-      width: 50%;
-      flex-basis: 50%;
-      height: 50vh;
-      margin-top: 0; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(2) {
-      height: auto; } }
-
-.magic > div:nth-last-child(4n+3):first-child ~ div:last-child {
-  width: 33.33333%;
-  flex-basis: 33.33333%;
-  height: 50%;
-  margin-left: -33.33333%;
-  -ms-transform: translateY(100%);
-  -webkit-transform: translateY(100%);
-  -moz-transform: translateY(100%);
-  transform: translateY(100%); }
-  @media screen and (max-width: 768px) {
-    .magic > div:nth-last-child(4n+3):first-child ~ div:last-child {
-      width: 50%;
-      flex-basis: 50%;
-      height: 50vh;
-      margin-top: 0;
-      margin-left: 0; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-last-child(4n+3):first-child ~ div:last-child {
-      height: auto; } }
-
-.magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(4) {
-  width: 33.33333%;
-  flex-basis: 33.33333%;
-  height: 100%; }
-  @media screen and (max-width: 768px) {
-    .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(4) {
-      width: 50%;
-      flex-basis: 50%;
-      height: 100vh;
-      margin-left: -50%; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(4) {
-      height: auto; } }
-
-.magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(3) {
-  width: 66.66667%;
-  flex-basis: 66.66667%;
-  height: 50%; }
-  @media screen and (max-width: 768px) {
-    .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(3) {
-      width: 50%;
-      flex-basis: 50%;
-      height: 100vh;
-      margin-top: 50vh; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(3) {
-      height: auto; } }
-
-.magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(2) {
-  width: 33.33333%;
-  flex-basis: 33.33333%;
-  height: 50%;
-  margin-left: -66.66667%;
-  -ms-transform: translateY(100%);
-  -webkit-transform: translateY(100%);
-  -moz-transform: translateY(100%);
-  transform: translateY(100%); }
-  @media screen and (max-width: 768px) {
-    .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(2) {
-      width: 50%;
-      flex-basis: 50%;
-      margin-left: -50%;
-      height: 50vh; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(2) {
-      height: auto; } }
-
-.magic > div:nth-last-child(4n+4):first-child ~ div:last-child {
-  width: 33.33333%;
-  flex-basis: 33.33333%;
-  height: 50%;
-  -ms-transform: translateY(100%);
-  -webkit-transform: translateY(100%);
-  -moz-transform: translateY(100%);
-  transform: translateY(100%); }
-  @media screen and (max-width: 768px) {
-    .magic > div:nth-last-child(4n+4):first-child ~ div:last-child {
-      width: 50%;
-      flex-basis: 50%;
-      height: 50vh;
-      margin-top: -50vh; } }
-  @media screen and (max-width: 576px) {
-    .magic > div:nth-last-child(4n+4):first-child ~ div:last-child {
-      height: auto; } }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
   .magic > div:nth-child(1) {
     margin-left: 0 !important; } }
 
@@ -234,7 +54,7 @@
   width: 33.33333%;
   flex-basis: 33.33333%;
   height: 100%; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 750px) {
     .magic > div:nth-child(4n+1) {
       width: 50%;
       flex-basis: 50%;
@@ -248,7 +68,7 @@
   width: 66.66667%;
   flex-basis: 66.66667%;
   height: 50%; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 750px) {
     .magic > div:nth-child(4n+2) {
       width: 50%;
       flex-basis: 50%;
@@ -267,7 +87,7 @@
   -webkit-transform: translateY(100%);
   -moz-transform: translateY(100%);
   transform: translateY(100%); }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 750px) {
     .magic > div:nth-child(4n+3) {
       width: 50%;
       flex-basis: 50%;
@@ -285,7 +105,7 @@
   -webkit-transform: translateY(100%);
   -moz-transform: translateY(100%);
   transform: translateY(100%); }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 750px) {
     .magic > div:nth-child(4n+4) {
       width: 50%;
       flex-basis: 50%;
@@ -293,4 +113,175 @@
       margin-top: -50vh; } }
   @media screen and (max-width: 576px) {
     .magic > div:nth-child(4n+4) {
+      height: auto; } }
+
+.magic > div:nth-last-child(4n+1):first-child ~ div:last-child {
+  width: 33.33333%;
+  flex-basis: 33.33333%;
+  height: 100%; }
+  @media screen and (max-width: 750px) {
+    .magic > div:nth-last-child(4n+1):first-child ~ div:last-child {
+      width: 50%;
+      flex-basis: 50%;
+      height: 100vh;
+      margin-left: -50%; } }
+  @media screen and (max-width: 750px) {
+    .magic > div:nth-last-child(4n+1):first-child ~ div:last-child {
+      width: 100%;
+      flex-basis: 100%;
+      height: 50vh; } }
+  @media screen and (max-width: 576px) {
+    .magic > div:nth-last-child(4n+1):first-child ~ div:last-child {
+      height: auto; } }
+
+.magic > div:nth-last-child(4n+2):first-child ~ div:last-child {
+  width: 33.33333%;
+  flex-basis: 33.33333%;
+  height: 50%;
+  margin-left: -33.33333%;
+  -ms-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  transform: translateY(100%); }
+  @media screen and (max-width: 750px) {
+    .magic > div:nth-last-child(4n+2):first-child ~ div:last-child {
+      width: 50%;
+      flex-basis: 50%;
+      height: 50vh;
+      margin-top: 0;
+      margin-left: 0; } }
+  @media screen and (max-width: 576px) {
+    .magic > div:nth-last-child(4n+2):first-child ~ div:last-child {
+      height: auto; } }
+
+.magic > div:nth-last-child(4n+2):first-child ~ div:nth-last-child(2) {
+  width: 33.33333%;
+  flex-basis: 33.33333%;
+  height: 50%; }
+  @media screen and (max-width: 750px) {
+    .magic > div:nth-last-child(4n+2):first-child ~ div:nth-last-child(2) {
+      width: 50%;
+      flex-basis: 50%;
+      height: 50vh;
+      margin-top: 0; } }
+  @media screen and (max-width: 576px) {
+    .magic > div:nth-last-child(4n+2):first-child ~ div:nth-last-child(2) {
+      height: auto; } }
+
+.magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(3) {
+  width: 33.33333%;
+  flex-basis: 33.33333%;
+  height: 100%; }
+  @media screen and (max-width: 750px) {
+    .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(3) {
+      width: 50%;
+      flex-basis: 50%;
+      height: 100vh;
+      margin-left: -50%; } }
+  @media screen and (max-width: 750px) {
+    .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(3) {
+      width: 100%;
+      flex-basis: 100%;
+      height: 50vh; } }
+  @media screen and (max-width: 576px) {
+    .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(3) {
+      height: auto; } }
+
+.magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(2) {
+  width: 33.33333%;
+  flex-basis: 33.33333%;
+  height: 50%; }
+  @media screen and (max-width: 750px) {
+    .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(2) {
+      width: 50%;
+      flex-basis: 50%;
+      height: 50vh;
+      margin-top: 0; } }
+  @media screen and (max-width: 576px) {
+    .magic > div:nth-last-child(4n+3):first-child ~ div:nth-last-child(2) {
+      height: auto; } }
+
+.magic > div:nth-last-child(4n+3):first-child ~ div:last-child {
+  width: 33.33333%;
+  flex-basis: 33.33333%;
+  height: 50%;
+  margin-left: -33.33333%;
+  -ms-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  transform: translateY(100%); }
+  @media screen and (max-width: 750px) {
+    .magic > div:nth-last-child(4n+3):first-child ~ div:last-child {
+      width: 50%;
+      flex-basis: 50%;
+      height: 50vh;
+      margin-top: 0;
+      margin-left: 0; } }
+  @media screen and (max-width: 576px) {
+    .magic > div:nth-last-child(4n+3):first-child ~ div:last-child {
+      height: auto; } }
+
+.magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(4) {
+  width: 33.33333%;
+  flex-basis: 33.33333%;
+  height: 100%; }
+  @media screen and (max-width: 750px) {
+    .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(4) {
+      width: 50%;
+      flex-basis: 50%;
+      height: 100vh;
+      margin-left: -50%; } }
+  @media screen and (max-width: 576px) {
+    .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(4) {
+      height: auto; } }
+
+.magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(3) {
+  width: 66.66667%;
+  flex-basis: 66.66667%;
+  height: 50%; }
+  @media screen and (max-width: 750px) {
+    .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(3) {
+      width: 50%;
+      flex-basis: 50%;
+      height: 100vh;
+      margin-top: 50vh; } }
+  @media screen and (max-width: 576px) {
+    .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(3) {
+      height: auto; } }
+
+.magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(2) {
+  width: 33.33333%;
+  flex-basis: 33.33333%;
+  height: 50%;
+  margin-left: -66.66667%;
+  -ms-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  transform: translateY(100%); }
+  @media screen and (max-width: 750px) {
+    .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(2) {
+      width: 50%;
+      flex-basis: 50%;
+      margin-left: -50%;
+      height: 50vh; } }
+  @media screen and (max-width: 576px) {
+    .magic > div:nth-last-child(4n+4):first-child ~ div:nth-last-child(2) {
+      height: auto; } }
+
+.magic > div:nth-last-child(4n+4):first-child ~ div:last-child {
+  width: 33.33333%;
+  flex-basis: 33.33333%;
+  height: 50%;
+  -ms-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  transform: translateY(100%); }
+  @media screen and (max-width: 750px) {
+    .magic > div:nth-last-child(4n+4):first-child ~ div:last-child {
+      width: 50%;
+      flex-basis: 50%;
+      height: 50vh;
+      margin-top: -50vh; } }
+  @media screen and (max-width: 576px) {
+    .magic > div:nth-last-child(4n+4):first-child ~ div:last-child {
       height: auto; } }

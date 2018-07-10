@@ -21,7 +21,6 @@ $media_phone_enable: true; //true or false
   flex-direction: row;
   flex-shrink: 0;
   position: relative;
-  overflow-y: hidden;
   overflow-x: auto;
   min-height: 2em;
 
@@ -43,5 +42,5 @@ $media_phone_enable: true; //true or false
 @import 'scss/magic/media_pad'; // media Pad
 @import 'scss/magic/media_phone'; // media Phone if you want
 
-@import 'scss/magic/count'; // last blocks
 @import 'scss/magic/count-all'; // all blocks
+@import 'scss/magic/count'; // last blocks
