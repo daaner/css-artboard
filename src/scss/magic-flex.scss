@@ -1,9 +1,7 @@
 $content_width: 100% !default;
 $content_height: 100% !default;
-$content_height_mobile: 250px !default;
 
 $content_width_media: ($content_width /2);
-$content_height_media: ($content_height_mobile *2);
 
 $b_width: ($content_width /3);
 $b_height: ($content_height /2);
@@ -32,6 +30,7 @@ $media_phone_enable: true; //true or false
   position: relative;
   overflow-y: hidden;
   overflow-x: auto;
+  min-height: 2em;
 
   & > div {
     display: flex;

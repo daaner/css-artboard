@@ -32,9 +32,9 @@
     <?php //favicon
       $fav = $base . 'favicon.ico';
     ?>
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo $fav ?>">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="<?php echo $fav ?>">
     <link rel="apple-touch-icon-precomposed" href="<?php echo $fav ?>">
-    <meta name="msapplication-TileImage" content="<?php echo $fav ?>">
+    <meta name="msapplication-TileImage" content="<?php echo $fav ?>"> -->
 
     <?php //canonical
     if (!isset($canonical)) {
