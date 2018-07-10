@@ -1,107 +1,32 @@
 $phone: 576px !default;
 $block_width_phone: 100% !default;
-$block_height_phone: 100vh !default;
+$min-height_phone: 30vh; //work in safari only 10+, ie 11+
 
 @if($media_phone_enable){
   @media screen and (max-width: $phone) {
     .magic {
       flex-wrap: wrap;
       overflow-x: hidden;
-      overflow-y: auto !important;
+      overflow-y: auto;
       height: auto;
       max-height: none;
+      display: block;
 
       & > div {
         width: $block_width_phone !important;
         flex-basis: $block_width_phone !important;
         margin: 0!important;
-
+        min-height: $min-height_phone;
       }
     }
   }
 }
 
-
-// left_block
-@mixin left_block_media_phone {
+// all_block
+@mixin block_media_phone {
   @if($media_phone_enable){
     @media screen and (max-width: $phone) {
-      margin: 0!important;
-      height: auto !important;
-      min-height: $block_height_phone;
-    }
-  }
-}
-
-@mixin left_block_media_phone_fix {
-  @if($media_phone_enable){
-    @media screen and (max-width: $phone) {
-      margin-left: 0 !important;
-      height: auto !important;
-      min-height: $block_height_phone;
-    }
-  }
-}
-
-//top_block
-@mixin top_block_media_phone {
-  @if($media_phone_enable){
-    @media screen and (max-width: $phone) {
-      margin: 0!important;
-      height: auto !important;
-      min-height: $block_height_phone;
-    }
-  }
-}
-@mixin top_block_media_phone_fix {
-  @if($media_phone_enable){
-    @media screen and (max-width: $phone) {
-      margin: 0!important;
-      height: auto !important;
-    }
-  }
-}
-
-//sql_block
-@mixin sql_block_media_phone {
-  @if($media_phone_enable){
-    @media screen and (max-width: $phone) {
-      margin: 0!important;
-      height: auto !important;
-      min-height: $block_height_phone;
-    }
-  }
-}
-
-//sqr_block
-@mixin sqr_block_media_phone {
-  @if($media_phone_enable){
-    @media screen and (max-width: $phone) {
-      margin: 0!important;
-      height: auto !important;
-      min-height: $block_height_phone;
-    }
-  }
-}
-
-//sqt_block
-@mixin sqt_block_media_phone {
-  @if($media_phone_enable){
-    @media screen and (max-width: $phone) {
-      margin: 0!important;
-      height: auto !important;
-      min-height: $block_height_phone;
-    }
-  }
-}
-
-//sqb_block
-@mixin sqb_block_media_phone {
-  @if($media_phone_enable){
-    @media screen and (max-width: $phone) {
-      margin: 0!important;
-      height: auto !important;
-      min-height: $block_height_phone;
+      height: auto;
     }
   }
 }

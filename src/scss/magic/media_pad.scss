@@ -1,5 +1,5 @@
-// $pad: 768px !default;
-$pad: 750px !default;
+$pad: 768px !default;
+// $pad: 750px !default;
 $block_width: 50% !default;
 $block_height: 50vh !default;
 
@@ -9,7 +9,7 @@ $block_height: 50vh !default;
   .magic {
     flex-wrap: wrap;
     overflow-x: hidden;
-    overflow-y: auto !important;
+    overflow-y: auto;
     height: auto;
     max-height: none;
 
@@ -45,7 +45,7 @@ $block_height: 50vh !default;
   @media screen and (max-width: $pad) {
     width: $block_width;
     flex-basis: $block_width;
-    height: ($block_height *2) !important;
+    height: ($block_height *2);
     margin-top: $block_height;
   }
 }
@@ -62,7 +62,7 @@ $block_height: 50vh !default;
   @media screen and (max-width: $pad) {
     width: $block_width;
     flex-basis: $block_width;
-    margin-left: -$block_width !important;
+    margin-left: -$block_width;
     height: $block_height;
   }
 }
@@ -82,7 +82,7 @@ $block_height: 50vh !default;
   @media screen and (max-width: $pad) {
     width: $block_width;
     flex-basis: $block_width;
-    height: $block_height !important;
+    height: $block_height;
     margin-top: 0;
   }
 }
@@ -92,8 +92,8 @@ $block_height: 50vh !default;
   @media screen and (max-width: $pad) {
     width: $block_width;
     flex-basis: $block_width;
-    height: $block_height !important;
+    height: $block_height;
     margin-top: 0;
-    margin-left: 0 !important;
+    margin-left: 0;
   }
 }

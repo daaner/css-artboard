@@ -2,27 +2,27 @@
 .magic {
   & > div:nth-child(1) {
     @include left_block_media_pad_fix;
-    @include left_block_media_phone_fix;
+    @include block_media_phone;
   }
   & > div:nth-child(4n+1) {
     @include left_block;
     @include left_block_media_pad;
-    @include left_block_media_phone;
+    @include block_media_phone;
   }
   & > div:nth-child(4n+2) {
     @include top_block;
     @include top_block_media_pad;
-    @include top_block_media_phone;
+    @include block_media_phone;
   }
   & > div:nth-child(4n+3) {
     @include sql_block;
     @include sql_block_media_pad;
-    @include sql_block_media_phone;
+    @include block_media_phone;
   }
   & > div:nth-child(4n+4) {
     @include sqr_block;
     @include sqr_block_media_pad;
-    @include sqr_block_media_phone;
+    @include block_media_phone;
   }
 
 }
